@@ -29,10 +29,10 @@
   }
   
   .content {
-    display: flex;
+    display: flex; 
     flex-wrap: wrap;
   }
-  
+ 
   .box {
     flex: 25%;
     padding: 20px;
@@ -40,8 +40,8 @@
   }
 
   .img{
-    width: 300px;
-    height: 300px;
+    width: 300px; 
+    height: 300px; 
     padding:20px;
   }
 
@@ -58,9 +58,9 @@
       flex: 50%;
     }
   }
-  
+
   @media screen and (max-width: 600px) {
-    .row {
+    .content {
       flex-direction: column;
     }
   
