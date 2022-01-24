@@ -27,19 +27,19 @@
     background-color: #ddd;
     color: black;
   }
-  
+  /* content som är parent vi definerar flex, flex-wrap som lindar in elementet och wrap för att byta rad*/ 
   .content {
     display: flex; 
     flex-wrap: wrap;
   }
- 
+ /*class box för alla child element på 25% vardera, lika stora. Skapar 4 kolumner vi har 4 rader 4*25=100 */
   .box {
     flex: 25%;
     padding: 20px;
     background-color:#ccc;
   }
 
-  .img{
+  img{
     width: 300px; 
     height: 300px; 
     padding:20px;
@@ -52,19 +52,20 @@
    margin-bottom:0;
   }
 
-
+/*media queris som säger att alla skärmar på 992 px eller mindre ska placera boxarna brevid varandra. 50% för att dela upp till två kolumner*/
   @media screen and (max-width: 992px) {
     .box {
       flex: 50%;
     }
   }
-
+/*600 px eller mindre så lägger dom sig på varandra istället för brevid varandra */
   @media screen and (max-width: 600px) {
     .content {
-      flex-direction: column;
+      flex-direction: column; /* vilket håll containern ska lägga sig, column lägger dom på varandra vertikalt top till bottom.*/
     }
   
   img{
-      width: 100%;
+      width: 80%;
+      height: auto;
   }
 }
